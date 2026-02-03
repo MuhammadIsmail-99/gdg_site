@@ -131,4 +131,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Announcement Modal (Auto-popup on load) ---
+    const announcementModal = document.getElementById('announcement-modal');
+    const closeAnnouncement = document.getElementById('close-announcement');
+
+    if (announcementModal && closeAnnouncement) {
+        // Show after a short delay
+        setTimeout(() => {
+            // Check if already shown this session
+            if (!sessionStorage.getItem('announcementShown')) {
+                announcementModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }, 1500);
+
+        const hideAnnouncement = () => {
+            announcementModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            sessionStorage.setItem('announcementShown', 'true');
+        };
+
+        closeAnnouncement.addEventListener('click', hideAnnouncement);
+
+        // Close on overlay click
+        announcementModal.addEventListener('click', (e) => {
+            if (e.target === announcementModal) {
+                hideAnnouncement();
+            }
+        });
+    }
+
 });

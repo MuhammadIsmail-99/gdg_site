@@ -88,7 +88,7 @@
                 </div>
                 <div class="flex flex-col lg:flex-row items-center gap-16">
                     <div class="lg:w-1/2">
-                        <img src="/assets/images/community.jpeg" alt="Community Event" loading="lazy"
+                        <img src="/assets/images/community.png" alt="Community Event" loading="lazy"
                             class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
                     </div>
                     <div class="lg:w-1/2">
@@ -216,8 +216,10 @@
                     <p class="text-gray-500 mt-2 text-lg">A huge thanks to our supporters.</p>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
-                    <img src="/assets/images/partners/Air University.png" alt="Air University" loading="lazy" class="h-20">
-                    <img src="/assets/images/partners/GDGoC CUI Chapter Logo.png" alt="GDGoC CUI Chapter" loading="lazy" class="h-20">
+                    <img src="/assets/images/partners/Air University.png" alt="Air University" loading="lazy"
+                        class="h-20">
+                    <img src="/assets/images/partners/GDGoC CUI Chapter Logo.png" alt="GDGoC CUI Chapter" loading="lazy"
+                        class="h-20">
                     <img src="/assets/images/partners/datacamp.png" alt="Datacamo" loading="lazy" class="h-20">
                     <img src="/assets/images/partners/github.png" alt="GitHub" loading="lazy" class="h-20">
                 </div>
@@ -359,6 +361,26 @@
             }
         });
     </script>
+    <!-- Announcement Modal -->
+    <div id="announcement-modal" class="announcement-overlay">
+        <div class="announcement-container">
+            <button id="close-announcement" class="announcement-close">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="announcement-content">
+                <span class="announcement-badge">2026 Registrations</span>
+                <h2 class="announcement-title">Registrations <br> <span class="gdg-blue">Now</span> <span
+                        class="gdg-red">Open!</span></h2>
+                <p class="announcement-text">
+                    Join GDG Wah Campus specialized clubs and be part of the most active tech community. Master AI, Web,
+                    Data Science, and more!
+                </p>
+                <a href="clubs/" class="announcement-btn text-center">
+                    Discover Clubs & Join
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
