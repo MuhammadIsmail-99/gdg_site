@@ -9,7 +9,8 @@ body {
 
 /* Header active link styling */
 .nav-links a.active {
-    color: #4285F4; /* GDG Blue */
+    color: #4285F4;
+    /* GDG Blue */
     font-weight: 700;
 }
 
@@ -17,16 +18,27 @@ body {
 /* Backgrounds and Colors */
 .hero-bg {
     background-color: #F8F9FA;
-    background-image: 
+    background-image:
         radial-gradient(circle at 15% 50%, rgba(66, 133, 244, 0.05), transparent 30%),
         radial-gradient(circle at 85% 30%, rgba(219, 68, 55, 0.05), transparent 30%),
         radial-gradient(circle at 60% 80%, rgba(15, 157, 88, 0.05), transparent 30%);
 }
 
-.gdg-blue { color: #4285F4; }
-.gdg-red { color: #DB4437; }
-.gdg-yellow { color: #F4B400; }
-.gdg-green { color: #0F9D58; }
+.gdg-blue {
+    color: #4285F4;
+}
+
+.gdg-red {
+    color: #DB4437;
+}
+
+.gdg-yellow {
+    color: #F4B400;
+}
+
+.gdg-green {
+    color: #0F9D58;
+}
 
 
 /* Call to Action Button */

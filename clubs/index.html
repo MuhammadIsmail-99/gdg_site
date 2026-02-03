@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs | GDG Wah Campus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-white sticky top-0 z-50 shadow-md transition-all duration-300">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="../" class="flex items-center space-x-2">
+                <img src="/assets/images/logo.png" alt="GDG Logo" class="rounded-full w-[80px] h-[80px]">
+                <span class="text-xl font-bold text-gray-700">GDG <span class="font-semibold text-gray-500">Wah
+                        Campus</span></span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 nav-links">
+                <a href="../" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                <a href="../#about" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+                <a href="../#events" class="text-gray-600 hover:text-blue-600 font-medium">Events</a>
+                <a href="../teams/" class="text-gray-600 hover:text-blue-600 font-medium">Leadership</a>
+                <a href="../#contact" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="https://www.linkedin.com/company/gdg-cuiwah/" target="_blank"
+                    class="text-gray-500 hover:text-blue-600" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/gdgoccuiwah?igsh=Y3ZqZmU5dnV2dDVu" target="_blank"
+                    class="text-gray-500 hover:text-blue-600" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-600 focus:outline-none">
+                <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="../" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="../#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="../#events" class="block py-2 text-gray-600 hover:text-blue-600">Events</a>
+            <a href="../teams/" class="block py-2 text-gray-600 hover:text-blue-600">Leadership</a>
+            <a href="../#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-blue-600 text-white pt-24 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Explore Our Clubs</h1>
+                <p class="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
+                    Find your passion, join a community, and grow your skills with our specialized tech and non-tech
+                    clubs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Tech Clubs -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center space-x-4 mb-12">
+                    <div class="bg-blue-100 p-3 rounded-full"><i data-lucide="cpu" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">Tech Category</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Gen-AI Club -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/gen_ai_club.png" alt="Gen-AI Club" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Gen-AI Club</h3>
+                            <p class="text-gray-600 mb-4">Dive into the world of Gen-AI. Explore LLMs, diffusion
+                                models, and build the future of AI-driven applications.</p>
+                            <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://forms.gle/fd1yfsnQYMHr4uTy8" target="_blank"
+                                class="block w-full text-center mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Web and App Club -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/web_app_club.png" alt="Web and App Club"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Web and App Club</h3>
+                            <p class="text-gray-600 mb-4">Master modern web and mobile development. From React and
+                                Flutter to backend systems, build scalable solutions.</p>
+                            <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://forms.gle/3wvZhBbzggD86zQs7" target="_blank"
+                                class="block w-full text-center mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Data Science Club -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/data_science_club.jpg" alt="Data Science Club"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Data Science Club</h3>
+                            <p class="text-gray-600 mb-4">Uncover insights from data. Learn machine learning, data
+                                visualization, and statistical analysis.</p>
+                            <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://forms.gle/62GU7n8jNqcXVdH9A" target="_blank"
+                                class="block w-full text-center mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="container mx-auto px-6">
+            <hr class="border-gray-200">
+        </div>
+
+        <!-- Non-Tech Clubs -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center space-x-4 mb-12">
+                    <div class="bg-red-100 p-3 rounded-full"><i data-lucide="palette" class="w-8 h-8 text-red-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">Non-Tech Category</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Social Media and Marketing -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/social_media_club.png" alt="Social Media Club"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Social Media & Marketing</h3>
+                            <p class="text-gray-600 mb-4">Amplify our voice. Master digital marketing, content creation,
+                                and brand storytelling.</p>
+                            <a href="#" class="inline-block text-red-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://forms.gle/PoPP2DmcijJShWUW9" target="_blank"
+                                class="block w-full text-center mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Graphics Club -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/graphics_design_club.png" alt="Graphics Club"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Graphics Club</h3>
+                            <p class="text-gray-600 mb-4">Visualize ideas. Design stunning visuals, UI/UX prototypes,
+                                and promotional assets.</p>
+                            <a href="#" class="inline-block text-red-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKAm3rfJRoYxMtlw6pAjqbFv5BwtL7X4Uayjf7sIj9HiG_lQ/viewform"
+                                target="_blank"
+                                class="block w-full text-center mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Events Management -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="/assets/images/events_management_club.png" alt="Events Management"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Events Management</h3>
+                            <p class="text-gray-600 mb-4">Orchestrate experiences. Plan and execute successful
+                                workshops, hackathons, and meetups.</p>
+                            <a href="#" class="inline-block text-red-600 font-semibold hover:underline">Learn More
+                                &rarr;</a>
+                            <a href="https://forms.gle/T3dpULdLPsHPj5dd9" target="_blank"
+                                class="block w-full text-center mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Join
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">GDG Wah Campus</h3>
+                    <p class="text-gray-400">Building the future of tech in Wah, together.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="https://www.linkedin.com/company/gdg-cuiwah/" target="_blank"
+                            class="text-gray-400 hover:text-white" aria-label="LinkedIn"><i data-lucide="linkedin"
+                                class="w-6 h-6"></i></a>
+                        <a href="https://www.instagram.com/gdgoccuiwah?igsh=Y3ZqZmU5dnV2dDVu" target="_blank"
+                            class="text-gray-400 hover:text-white" aria-label="Instagram"><i data-lucide="instagram"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../#about" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="../#events" class="text-gray-400 hover:text-white transition-colors">Events</a>
+                        </li>
+                        <li><a href="../clubs/" class="text-gray-400 hover:text-white transition-colors">Become a
+                                Member</a></li>
+                        <li><a href="https://developers.google.com/" target="_blank"
+                                class="text-gray-400 hover:text-white transition-colors">Google for Developers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Have questions or want to collaborate? <br> Reach out to us!</p>
+                    <a href="mailto:gdg.wahcampus@example.com"
+                        class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">Email
+                        Us</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 GDG Wah Campus. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>

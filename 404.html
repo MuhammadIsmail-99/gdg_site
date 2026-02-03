@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | GDG Wah Campus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .rotate-slow {
+            animation: rotate 20s linear infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .code-block {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+
+        .keyword {
+            color: #569cd6;
+        }
+
+        .string {
+            color: #ce9178;
+        }
+
+        .comment {
+            color: #6a9955;
+        }
+
+        .function {
+            color: #dcdcaa;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-white sticky top-0 z-50 shadow-md transition-all duration-300">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <img src="/assets/images/logo.png" alt="GDG Logo" class="rounded-full w-[80px] h-[80px]">
+                <span class="text-xl font-bold text-gray-700">GDG <span class="font-semibold text-gray-500">Wah
+                        Campus</span></span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 nav-links">
+                <a href="/" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                <a href="/#about" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+                <a href="/#events" class="text-gray-600 hover:text-blue-600 font-medium">Events</a>
+                <a href="/teams/" class="text-gray-600 hover:text-blue-600 font-medium">Leadership</a>
+                <a href="/#contact" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="https://www.linkedin.com/company/gdg-cuiwah/" target="_blank"
+                    class="text-gray-500 hover:text-blue-600" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/gdgoccuiwah?igsh=Y3ZqZmU5dnV2dDVu" target="_blank"
+                    class="text-gray-500 hover:text-blue-600" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-600 focus:outline-none">
+                <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="/" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="/#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="/#events" class="block py-2 text-gray-600 hover:text-blue-600">Events</a>
+            <a href="/teams/" class="block py-2 text-gray-600 hover:text-blue-600">Leadership</a>
+            <a href="/#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <main class="min-h-screen flex items-center justify-center py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Floating 404 with Google Colors -->
+            <div class="mb-8 float-animation">
+                <h1 class="text-9xl md:text-[12rem] font-extrabold leading-none">
+                    <span class="gdg-blue">4</span>
+                    <span class="gdg-red">0</span>
+                    <span class="gdg-yellow">4</span>
+                </h1>
+            </div>
+
+            <!-- Error Message -->
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Oops! Page Not Found
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Looks like this page took a wrong turn at the last commit. Don't worry, even the best developers get
+                lost sometimes!
+            </p>
+
+            <!-- Code Block with Error -->
+            <div class="code-block text-left mb-8 max-w-2xl mx-auto">
+                <div class="text-sm">
+                    <span class="comment">// Debugging the issue...</span><br>
+                    <span class="keyword">function</span> <span class="function">findPage</span>() {<br>
+                    &nbsp;&nbsp;<span class="keyword">const</span> page = <span class="string">"404.html"</span>;<br>
+                    &nbsp;&nbsp;<span class="keyword">if</span> (!page.exists()) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">throw new</span> <span
+                        class="function">Error</span>(<span class="string">"Page not found! 🤷‍♂️"</span>);<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;<span class="keyword">return</span> page;<br>
+                    }<br>
+                    <br>
+                    <span class="comment">// Suggested fix: Go back home!</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="/"
+                    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i data-lucide="home" class="w-5 h-5"></i>
+                    Go Home
+                </a>
+                <a href="/clubs/"
+                    class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-800 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-gray-200">
+                    <i data-lucide="users" class="w-5 h-5"></i>
+                    Explore Clubs
+                </a>
+            </div>
+
+            <!-- Helpful Links -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Looking for something specific?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                    <a href="/#about" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="bg-blue-100 p-2 rounded-lg">
+                            <i data-lucide="info" class="w-5 h-5 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">About Us</div>
+                            <div class="text-sm text-gray-600">Learn about GDG</div>
+                        </div>
+                    </a>
+                    <a href="/#events"
+                        class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="bg-green-100 p-2 rounded-lg">
+                            <i data-lucide="calendar" class="w-5 h-5 text-green-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Events</div>
+                            <div class="text-sm text-gray-600">Upcoming workshops</div>
+                        </div>
+                    </a>
+                    <a href="/teams/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="bg-yellow-100 p-2 rounded-lg">
+                            <i data-lucide="users" class="w-5 h-5 text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Leadership</div>
+                            <div class="text-sm text-gray-600">Meet our team</div>
+                        </div>
+                    </a>
+                    <a href="/#contact"
+                        class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                        <div class="bg-red-100 p-2 rounded-lg">
+                            <i data-lucide="mail" class="w-5 h-5 text-red-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Contact</div>
+                            <div class="text-sm text-gray-600">Get in touch</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fun Developer Message -->
+            <div class="mt-12 text-gray-500 text-sm">
+                <p>Error Code: <span class="font-mono bg-gray-200 px-2 py-1 rounded">HTTP_404_NOT_FOUND</span></p>
+                <p class="mt-2">💡 Pro tip: Check your URL for typos or use the navigation above</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2025 GDG Wah Campus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script>
+        // Initialize lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
